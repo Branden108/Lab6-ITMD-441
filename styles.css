@@ -55,23 +55,25 @@ button:hover {
 #result {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   width: 100%;
 }
 
-#result .data-card {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.data-card:hover {
+  transform: scale(1.05);
 }
 
-#result .data-card h3 {
-  color: #4CAF50;
+.data-card h3 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-#result .data-card p {
+.data-card p {
   font-size: 16px;
   color: #333;
 }

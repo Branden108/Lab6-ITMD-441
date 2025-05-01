@@ -20,7 +20,7 @@ document.getElementById('fetchData').addEventListener('click', function() {
     '40.79046428068625,-73.13812441849758': 'images/long-island.jpg',
     '43.096361467972315,-79.03814638410901': 'images/niagara-falls.jpg',
     '21.16077977259632,-86.8503963329336': 'images/cancun.jpg',
-    '21.309707800095662,-157.86229425884716': 'images/honolulu.jpg',
+    '21.309707800095662,-157.86229425884716': 'images/honolulu.jpeg',
     '52.36763599010202,4.902242031033321': 'images/amsterdam.jpg'
   };
 

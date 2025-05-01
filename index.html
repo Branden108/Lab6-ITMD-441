@@ -9,6 +9,7 @@
 <body>
   <div class="dashboard">
     <h1>Sunrise and Sunset Times</h1>
+    
     <label for="location">Choose a location:</label>
     <select id="location">
       <option value="42.150348298874235,-88.33829246956655">Illinois, Algonquin Commons</option>
@@ -22,16 +23,22 @@
       <option value="21.309707800095662,-157.86229425884716">Hawaii, Honolulu</option>
       <option value="52.36763599010202,4.902242031033321">Netherlands, Amsterdam</option>
     </select>
+    
     <button id="fetchData">Get Sunrise and Sunset Times</button>
 
     <div id="result">
       <p>Choose a location and click "Get Sunrise and Sunset Times" to see the data.</p>
     </div>
+
+    <div id="location-image-container">
+      <img id="location-image" src="" alt="Location Image" style="width: 100%; max-height: 300px; object-fit: cover; margin-top: 20px;" />
+    </div>
   </div>
 
-  <script src="script.js"></script>
   <footer>
     <p>Data provided by <a href="https://sunrisesunset.io/">Sunrise Sunset API</a>.</p>
   </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>

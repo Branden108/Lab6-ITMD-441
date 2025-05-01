@@ -101,6 +101,19 @@ footer p {
   font-size: 14px;
 }
 
+/* Styling for location image */
+#location-image-container {
+  display: none;
+  margin-top: 20px;
+}
+
+#location-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 /* Responsive styling (for smaller screens) */
 @media (max-width: 768px) {
   #result {

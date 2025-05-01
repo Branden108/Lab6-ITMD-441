@@ -6,6 +6,32 @@ document.getElementById('fetchData').addEventListener('click', function() {
   const resultDiv = document.getElementById('result');
   resultDiv.innerHTML = `<p class="placeholder">Loading data...</p>`;
 
+  // Add location-specific image when a location is selected
+  const locationImage = document.getElementById('location-image');
+  const imageContainer = document.getElementById('location-image-container');
+  
+  // Map location to image
+  const locationImages = {
+    '42.150348298874235,-88.33829246956655': 'images/algonquin.jpg',
+    '42.0464717076227,-88.03707016090677': 'images/woodfield.jpg',
+    '14.606132200178315,120.98282120339876': 'images/manila.jpg',
+    '41.48247616578942,-82.68350828399703': 'images/cedar-point.jpg',
+    '43.58663705156137,-89.7829713169242': 'images/wilderness.jpg',
+    '40.79046428068625,-73.13812441849758': 'images/long-island.jpg',
+    '43.096361467972315,-79.03814638410901': 'images/niagara-falls.jpg',
+    '21.16077977259632,-86.8503963329336': 'images/cancun.jpg',
+    '21.309707800095662,-157.86229425884716': 'images/honolulu.jpg',
+    '52.36763599010202,4.902242031033321': 'images/amsterdam.jpg'
+  };
+
+  // Set the image for the selected location
+  if (locationImages[location]) {
+    locationImage.src = locationImages[location];
+    imageContainer.style.display = 'block';  // Show the image container
+  } else {
+    imageContainer.style.display = 'none';  // Hide the image container if no image is found
+  }
+  
   // Function to format a date in YYYY-MM-DD format
   function formatDate(date) {
     const year = date.getFullYear();
